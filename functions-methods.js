@@ -73,7 +73,7 @@ function checkEmailValidity(email) {
     switch (true) {
         case atIndex === -1:
             return false; // Geen "@"-symbool
-        case commaIndex !== -1:
+        case commaIndex > -1:
             return false; // Komma aanwezig
         case lastChar === ".":
             return false; // Punt als laatste karakter
